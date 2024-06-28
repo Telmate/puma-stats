@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   files              = %w[CHANGELOG.md LICENSE README.md Rakefile lib]
   spec.files         = `git ls-files -z #{files.join(' ')}`.split("\0")
 
-  spec.add_runtime_dependency 'puma', '~> 3.0'
+  spec.add_runtime_dependency 'puma', '>= 6.0'
 
   spec.add_development_dependency 'bundler',  '~> 0'
   spec.add_development_dependency 'minitest', '~> 0'
