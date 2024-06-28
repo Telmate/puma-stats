@@ -18,7 +18,7 @@ module Puma
           rack_response(200, GC.stat.to_json)
 
         when %r{/puma-stats$}
-          rack_response(200, @launcher.stats)
+          rack_response(200, @launcher.stats.to_json)
 
         else
           rack_response 404, 'Unsupported request', 'text/plain'
